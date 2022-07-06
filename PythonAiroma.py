@@ -1,4 +1,4 @@
-
+airoma = '''
 <!DOCTYPE html>
 <html style = "font-size: 30px; font-family: Futura;" lang = 'en' dark = 'true'">
 <head>
@@ -9,3 +9,7 @@
 Welcome to Airoma
 </body>
 </html>
+'''
+Airoma = open('Airoma.html', 'w')
+Airoma.write(airoma)
+Airoma.close()
