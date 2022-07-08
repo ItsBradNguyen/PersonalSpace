@@ -49,7 +49,51 @@
 # employee_file.write('Jim - Salesman\nDwight - Salesman\nPam - Receptionist\nMichael - Manager\nOscar - Accountant\nTobey - Human Resources\nKelley - Customer Service')
 # employee_file.close()
 
-#Classes & Objects
-from PythonClass import Student
-student1 = Student('Brad','Information System', 3.974, True)
-print(student1.is_on_probation)
+# #Classes & Objects
+# from PythonClass import Student
+# student1 = Student('Brad','Information System', 3.974, False)
+# print(student1.is_on_probation)
+
+# # Object Functions
+# class Student:
+#     def __init__(self, name, major, gpa):
+#         self.name = name
+#         self.major = major
+#         self.gpa = gpa
+#     def on_honor_roll(self):
+#         if self.gpa >= 3.5:
+#             return True
+#         else:
+#             return False
+
+    
+# Student1 = Student('Oscar', 'Accounting', 3.1)
+# Student2 = Student('Mya', 'Business', 4)
+
+# print(Student2.on_honor_roll())
+
+# # Inheritance
+# from argparse import _MutuallyExclusiveGroup
+
+
+# class Chef:
+#     def make_chicken(self):
+#         print('The chef makes a chicken.')
+#     def make_salad(self):
+#         print('The chef makes a salad.')
+#     def make_special_dish(self):
+#         print('The chef makes bbq ribeyes.')
+
+# class ChineseChef(Chef):
+#     def make_special_dish(self):
+#         print('The chef makes orange chicken.')
+#     def make_fried_rice(self):
+#         print('The chef makes fried rice.')
+
+# myChef = Chef()
+# myChef.make_special_dish()
+
+# myChineseChef = ChineseChef()
+# myChineseChef.make_chicken()
+
+# Python Interpreter
