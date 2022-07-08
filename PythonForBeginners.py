@@ -96,4 +96,3 @@
 # myChineseChef = ChineseChef()
 # myChineseChef.make_chicken()
 
-# Python Interpreter
