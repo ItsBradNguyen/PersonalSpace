@@ -43,10 +43,13 @@
 #     print(employee)
 # employee_file.close()
 
-# Writing To Files
-''''a' stands for append'''
-employee_file = open('Employees.txt', 'w')
-employee_file.write('Jim - Salesman\nDwight - Salesman\nPam - Receptionist\nMichael - Manager\nOscar - Accountant\nTobey - Human Resources\nKelley - Customer Service')
-employee_file.close()
+# # Writing To Files
+# ''''a' stands for append'''
+# employee_file = open('Employees.txt', 'w')
+# employee_file.write('Jim - Salesman\nDwight - Salesman\nPam - Receptionist\nMichael - Manager\nOscar - Accountant\nTobey - Human Resources\nKelley - Customer Service')
+# employee_file.close()
 
-
+#Classes & Objects
+from PythonClass import Student
+student1 = Student('Brad','Information System', 3.974, True)
+print(student1.is_on_probation)
