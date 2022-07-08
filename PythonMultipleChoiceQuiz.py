@@ -3,26 +3,24 @@ class Question:
         self.prompt = prompt
         self.answer = answer
 
+questions_prompts = [
+    'What color are apples?\n(A) Red/Green\n(B) Purple\n(C) Magenta\n\n',
+    'What color are bananas?\n(A) Blue\n(B) Cyan\n(C) Yellow\n\n',
+    'What color are strawberries\n(A) Brown\n(B) Pink\n(C) Green\n\n'
+]
 
 questions = [
-    'What color are apples?\n(a) Red/Green\n(b) Purple\n(c) Pink\n\n',
-    'What color are bananas?\n(a) Yellow/Green\n(b) Orange\n(c) Red\n\n',
-    'What color are strawberries\n(a) Pink\n (b) Yellow\n(c) Orange\n\n'
+    Question(questions_prompts[0],'A'),
+    Question(questions_prompts[1],'C'),
+    Question(questions_prompts[2],'B'),
 ]
 
-question_answers = [
-    Question(questions[0],'a'),
-    Question(questions[1],'a'),
-    Question(questions[2],'a'),
-]
-
-
-def run_test(prompts):
+def run_test(questions):
     score = 0
     for question in questions:
-        user_answer = input(Question.prompt)
-        if user_answer == Question.answer:
+        answer = input(question.prompt)
+        if answer == question.answer:
             score += 1
-    print('You got ' + str(score) + '/' + str(len(questions)))
+    return 'You got ' + str(score) + '/' + str(len(questions))
 
-run_test
+print(run_test(questions))
